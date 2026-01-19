@@ -12,14 +12,14 @@ We systematically investigate the key factors of Active Learning (AL) performanc
 - Proposed two quantifiable metrics to measure the key influencing factors
 
 ### Quick Start
-这里是一个小的Demo，经过这个demo，您可以绘制出文章中的calibration curves。
+This is a demonstration. By following this demo, you will be able to plot the calibration curves presented in the paper.
 #### 1. Installation
 First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/YisuanZ/biomolecule-al-decipher.git
 cd biomolecule-al-decipher
 ```
-Then, set up the corresponding virtual environment according to the experiment type. Note that the separation of environments below is due to the special configuration requirements of our laboratory server. For experiment with ensemble-based and MC dropout UQ algorithms:
+Then, set up a corresponding virtual environment according to the type of experiment you wish to perform. It should be noted that the separation of the following environments is due to the specific configuration requirements of our laboratory server. For experiment with ensemble-based and MC dropout UQ algorithms:
 ```bash
 # Create and activate Conda virtual environment (named as you like)
 conda create -n AL python=3.9.6
@@ -35,14 +35,15 @@ conda activate ALdkl
 # Install all required dependencies in the environment
 pip install -r requirements_dkl.txt
 ```
-#### 2. Training and get results
-这里以ensemble-based的模型为例。在保证环境与Installation中描述的一致后，找到./src/UQ_Ensemble.py，该脚本可以直接运行，您也可以对其函数参数进行配置。如需运行：
+You may also combine the environments together based on your own condition.
+#### 2. Training and result extraction
+Here, we take the ensemble-based UQ algorithm as an example. After ensuring that your environment is consistent with the description in the Installation section, locate the file ./src/UQ_Ensemble.py. This script can be run directly, and you may also configure its function parameters as needed. To execute the script, run the following command:
 ```bash
 python ./src/UQ_Ensemble.py
 ```
-训练结束后，模型的训练参数会保存在./checkpoints文件夹下，实验中用到的结果会保存在./result下。
+Upon completion of the training process, the model's training parameters will be saved in the ./checkpoints directory, while the results generated during the experiment will be stored in the ./result directory.
 ### 3. Plotting
-在得到结果后，可以运行./src/evaluation.py进行绘制图像。注意CaliCurvePlot函数的参数需要和训练模型时的保持一致。
+Once the results have been obtained, you can run the ./src/evaluation.py script to generate the corresponding plots. It is important to note that the parameters of the CaliCurvePlot function must be consistent with those used during the model training phase. To generate the plots, execute the following command:
 ```bash
 python ./src/evaluation.py
 ```
