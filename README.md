@@ -47,3 +47,4 @@ Once the results have been obtained, you can run the `./src/evaluation.py` scrip
 ```bash
 python ./src/evaluation.py
 ```
+Once the scipt is over, the plots will be stroed in the `./result/calibration` directory.
