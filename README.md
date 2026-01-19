@@ -41,9 +41,9 @@ Here, we take the ensemble-based UQ algorithm as an example. After ensuring that
 ```bash
 python ./src/UQ_Ensemble.py
 ```
-Upon completion of the training process, the model's training parameters will be saved in the ./checkpoints directory, while the results generated during the experiment will be stored in the ./result directory.
+Upon completion of the training process, the model's training parameters will be saved in the `./checkpoints` directory, while the results generated during the experiment will be stored in the `./result` directory.
 ### 3. Plotting
-Once the results have been obtained, you can run the ./src/evaluation.py script to generate the corresponding plots. It is important to note that the parameters of the CaliCurvePlot function must be consistent with those used during the model training phase. To generate the plots, execute the following command:
+Once the results have been obtained, you can run the `./src/evaluation.py` script to generate the corresponding plots. It is important to note that the parameters of the function `CaliCurvePlot()` must be consistent with those used during the model training phase. To generate the plots, execute the following command:
 ```bash
 python ./src/evaluation.py
 ```
