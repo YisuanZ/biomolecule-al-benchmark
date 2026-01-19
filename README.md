@@ -15,24 +15,24 @@ We systematically investigate the key factors of Active Learning (AL) performanc
 Below is the detailed directory and file layout of this repository, which helps you quickly locate code, dependency files, and result storage locations. Auto-generated directories (marked below) do not need to be created manually.
 ```
 biomolecule-al-decipher/
-├── checkpoints/ # Stores trained model parameters (auto-generated after training)/
-├── result/ # Stores experimental results and generated plots (auto-generated after training)/
-├── src/ # Source code directory/
-│ ├── AL_sim.py # Training script for AL simulation/
-│ ├── UQ_DKL.py # Training script for DKL UQ algorithm/
-│ ├── UQ_Ensemble.py # Training script for ensemble-based UQ algorithm/
-│ ├── UQ_MCDropout.py # Training script for MC dropout UQ algorithm/
-│ ├── configs.py # Data-specific configurations/
-│ ├── evaluation.py # Evaluation and plotting functions/
-│ ├── metrics.py # Metrics for UQ/
-│ ├── model_zoo.py # Models for ensemble-based and MC dropout algo/
-│ ├── model_zoo_dkl.py # The model for DKL algo/
-│ ├── train.py # Training functions for ensemble-based and MC dropout algo/
-│ ├── train_DKL.py # Training functions for DKL algo/
-│ └── utils.py # Other utility functions (e.g., data processing)/
-├── requirements.txt # Dependencies for ensemble-based & MC dropout UQ experiments/
-├── requirements_dkl.txt # Dependencies for DKL UQ experiments/
-└── README.md # Project documentation (this file)/
+├── checkpoints/ # Stores trained model parameters (auto-generated after training)
+├── result/ # Stores experimental results and generated plots (auto-generated after training)
+├── src/ # Source code directory
+│ ├── AL_sim.py # Training script for AL simulation
+│ ├── UQ_DKL.py # Training script for DKL UQ algorithm
+│ ├── UQ_Ensemble.py # Training script for ensemble-based UQ algorithm
+│ ├── UQ_MCDropout.py # Training script for MC dropout UQ algorithm
+│ ├── configs.py # Data-specific configurations
+│ ├── evaluation.py # Evaluation and plotting functions
+│ ├── metrics.py # Metrics for UQ
+│ ├── model_zoo.py # Models for ensemble-based and MC dropout algo
+│ ├── model_zoo_dkl.py # The model for DKL algo
+│ ├── train.py # Training functions for ensemble-based and MC dropout algo
+│ ├── train_DKL.py # Training functions for DKL algo
+│ └── utils.py # Other utility functions (e.g., data processing)
+├── requirements.txt # Dependencies for ensemble-based & MC dropout UQ experiments
+├── requirements_dkl.txt # Dependencies for DKL UQ experiments
+└── README.md # Project documentation (this file)
 ```
 
 ### Quick Start
