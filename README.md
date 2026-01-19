@@ -14,8 +14,10 @@ We systematically investigate the key factors of Active Learning (AL) performanc
 ### Quick Start
 #### 1. Installation
 Clone the repository and set up the environment:
-> git clone https://github.com/YisuanZ/biomolecule-al-decipher.git
-> cd biomolecule-al-decipher
-> conda create -n biomolecule-al-decipher python=3.11
-> conda activate biomolecule-al-decipher
-> pip install -r requirements.txt
+'''
+git clone https://github.com/YisuanZ/biomolecule-al-decipher.git
+cd biomolecule-al-decipher
+conda create -n biomolecule-al-decipher python=3.11
+conda activate biomolecule-al-decipher
+pip install -r requirements.txt
+'''
